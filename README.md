@@ -13,7 +13,7 @@ This repository contains a basic implementation of the Simon Says game using HTM
 - JavaScript for implementing game logic and interactivity.
 
 **Instructions for Playing:**
-1. Press the "Start" button to begin the game.
+1. Press any button to begin the game.
 2. Watch carefully as the game displays a sequence of colors.
 3. Repeat the sequence by clicking on the corresponding colors in the same order.
 4. The game will progressively increase the length of the sequence as you successfully complete each round.
