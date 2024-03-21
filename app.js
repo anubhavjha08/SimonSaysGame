@@ -9,13 +9,7 @@ let level = 0;
 let h21 = document.querySelector('h2');
 
 // To start the game 
-document.addEventListener("keypress", function () {
-    if (started == false) {
-        console.log("Game started!");
-        started = true;
-    }
-    setTimeout(levelUp, 1000);
-});
+document.addEventListener("keypress", starter);
 
 // flashes given by game itself
 function gameFlash(btn) {
@@ -107,4 +101,16 @@ function btnPress() {
 let allbtn = document.querySelectorAll('.btn');
 for (btn of allbtn) {
     btn.addEventListener("click", btnPress);
+}
+
+//additional for touch screen -------------------->
+let startBtn = document.querySelector('#start-but');
+startBtn.addEventListener("click", starter);
+
+function starter() {
+    if (started == false) {
+        console.log("Game started!");
+        started = true;
+    }
+    setTimeout(levelUp, 1000);
 }
