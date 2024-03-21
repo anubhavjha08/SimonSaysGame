@@ -75,6 +75,7 @@ function checkAns(idx) {
 
         h21.innerHTML = `Game Over! <span style="color: yellow;"><b> SCORE : ${level}</b></span> <br> Press any key to restart.`;
 
+startBtn.innerHTML = "- <b>Re-START</b> -";
         reseter();
     }
 }
